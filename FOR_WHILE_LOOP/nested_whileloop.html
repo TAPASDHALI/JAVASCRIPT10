@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTED WHILE LOOP</title>
+</head>
+<body>
+    <script>
+        var i = 0;
+        while (i<4){
+            document.write("<strong>Outer Nested While Loop</strong>");
+            document.write(i);
+            i++;
+            document.write("<br>");
+            var j = 0;
+            while (j <= 5){
+                document.write("Inner Nested While Loop");
+                document.write(j);
+                j++;
+                document.write("<br>")
+            }
+        }
+    </script>
+    <br><br>
+
+    <script>
+        var i = 0;
+        while (true){
+            if (i == 5){
+                break;
+            }
+            // document.write("<strong>Outer While Loop</strong>");
+            // document.write(i);
+            // i++;
+            // document.write("<br>");
+            document.write("<strong>Outer Nested While Loop</strong>" + i + "<br>");
+            i++;
+            var j = 0;
+            while (true){
+                if (j == 6){
+                    break;
+                }
+                // document.write("Inner While Loop");
+                // document.write(j);
+                // j++;
+                // document.write("<br>")
+                document.write("Inner Nested While Loop" + j +"<br>");
+                j++;
+            }
+        }
+    </script>
+    <br><br>
+</body>
+</html>

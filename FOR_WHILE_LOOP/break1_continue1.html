@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAK AND CONTINUE STATEMENT</title>
+</head>
+<body>
+    <script>
+        for(i = 1; i <= 5; i++){
+            if(i == 4){
+                break;     // stop loop
+            }
+            // document.write("break statement with for loop");
+            // document.write(i);
+            // document.write("<br>");
+            document.write("break statement with for loop" + i + "<br>");
+        }
+        document.write("Rest Of The Code:- ");
+    </script>
+    <br><br>
+    <script>
+        var i = 1;
+        while(i <= 5){
+            if(i == 4){
+                break;   // stop loop
+            }
+            // document.write("break statement with while loop");
+            // document.write(i);
+            // i++;
+            // document.write("<br>");
+            document.write("Break Statement Of The While Loop" + i + "<br>");
+            i++;
+        }
+        document.write("Rest of the Code")
+    </script>
+    <br><br>
+
+    <script>
+        for(i = -10; i <= 5; i++){
+            if(i == 3){
+                continue;    // skip when i == 3 loop
+            }
+            document.write("Cotinue Statement with for Loop");
+            document.write(i);
+            document.write("<br>");
+        }
+    </script>
+    <br><br>
+
+    <!-- <script>
+        var i = 1;
+        i++;
+        while(i <= 5){
+            if(i==3){
+                continue;
+            }
+            document.write("Continue statement with while loop");
+            document.write(i);
+            document.write("<br>");
+        }
+        document.write("Rest of the Code");
+    </script> -->
+</body>
+</html>
